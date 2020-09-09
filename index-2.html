@@ -6,10 +6,12 @@
 			body, html {
 				height: 100%;
 				margin: 0;
+				font-family: "Verdana";
 			}
 
 			nav {
 				overflow: auto;
+				padding: 20px;
 			}
 
 			main > section {
@@ -19,7 +21,27 @@
 			}
 
 			#nav {
-				background-color: #FF3B30;
+				background-color: #FBEEC1;
+			}
+
+			#nav-list {
+				display: flex;
+				justify-content: space-around;
+				list-style: none;
+			}
+
+			a:link, a:visited {
+				background-color: white;
+				color: black;
+				padding: 15px 25px;
+				text-align: center;
+				text-decoration: none;
+				border-radius: 15px;
+				border: 2px solid black;
+			}
+
+			a:hover, a:active {
+				background-color: grey;
 			}
 
 			#banner {
@@ -47,15 +69,16 @@
 
 		<main>
 			<nav id="nav">
-				<h1><a href="">Name of topic</a></h1>
-				<ul>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
+				<ul id="nav-list">
+					<li><a href="#banner">Home</a></li>
+					<li><a href="#topic-1">Places</a></li>
+					<li><a href="#topic-3">Activities</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 
 			<section id="banner">
+
 				<h2>Name of Section</h2>
 				<p>Some Text</p>
 			</section>
