@@ -80,8 +80,7 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				flex-direction: column;
-				
+				flex-direction: column;				
 			}
 
 			#topic-3 {
@@ -98,14 +97,13 @@
 
 			#topic-2  h2 {
 				font-size: 75px;
-				text-shadow: 5px 5px 2px grey;
 				text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+				text-align: center;
 			}
 
 			#topic-2 p {
 				font-size: 25px;
 				text-align: center;
-				margin: 0px 200px;
 				text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 			}
 
@@ -153,6 +151,41 @@
 				color: white;
 				text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 			}
+
+			#topic-1 ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				justify-content: center;
+			}
+
+			#topic-1 > h2 {
+				margin: 1em;
+				font-size: 3em;
+				text-align: center;
+				color: #eee;
+				text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+			}
+
+			.card {
+				width: 400px;
+				margin: 1em;
+				background-color: #eee;
+				box-shadow: 0 0 22px rgba(0, 0, 0, 0.44);
+			}
+
+			.card img {
+				width: 100%;
+			}
+
+			.card h3 {
+				font-size: 2em;
+			}
+
+			.card h3, .card p {
+				margin: 1rem;
+			}
 		</style>
 	</head>
 	<body>
@@ -172,21 +205,37 @@
 			</section>
 
 			<section id="topic-1">
-				<p>Info cards go in this section...</p>
+				<h2>Places to Visit</h2>
 				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
+					<li class="card">
+						<img src="/20200616_210634.jpg">
+						<h3>Harry Gardner Park</h3>
+						<p>Great place to camp, fish, and much more!</p>
+					</li>
+					<li class="card">
+						<img src="/20200625_202512.jpg">
+						<h3>Forest Land</h3>
+						<p>The area is littered with logging roads which give acess to many great things like wonderful
+							swimming and fishing spots along the Toutle River!
+						</p>
+					</li>
+					<li class="card">
+						<img src="/20200402_190418.jpg">
+						<h3>Silver Lake</h3>
+						<p>Enjoy a wonderful day out on the water at Silver Lake!</p>
+					</li>
 				</ul>
 			</section>
 
 			<section id="topic-2">
-				<h2>The possibilites are endless</h2>
+				<div id = "topic-2-text">
+					<h2>The possibilites are endless</h2>
 					<p>
-						The eruption of Mt. St. Helens was the most deadly and economically destructive volcanic event in the U.S when it blew back in 
-						1980. Come up and take a look for yourself the true beauty of a volcano that forever engraved itself
+						The eruption of Mt. St. Helens was the most deadly and economically destructive volcanic event<br> in the U.S when it blew back in 
+						1980. Come up and take a look for yourself the true<br> beauty of a volcano that forever engraved itself
 						into the U.S history books.
 					</p>
+				</div>
 			</section>
 
 			<section id="topic-3">
