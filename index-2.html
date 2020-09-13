@@ -65,11 +65,12 @@
 				font-size: 75px;
 			}
 
-			#topic-1 {
+			#places {
 				background-color: #BC986A;
+				text-align: center;
 			}
 
-			#topic-2 {
+			#more-info {
 				background-image: url(20200729_111610.jpg);
 				height: 50px;
 				background-attachment: fixed;
@@ -83,7 +84,7 @@
 				flex-direction: column;				
 			}
 
-			#topic-3 {
+			#activities {
 				background-color: #8D8741;
 				display: flex;
 				justify-content: space-around;
@@ -93,15 +94,19 @@
 			#contact {
 				background-color: #659DBD;
 				padding: 100px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
 			}
 
-			#topic-2  h2 {
+			#more-info  h2 {
 				font-size: 75px;
 				text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 				text-align: center;
 			}
 
-			#topic-2 p {
+			#more-info p {
 				font-size: 25px;
 				text-align: center;
 				text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -141,29 +146,29 @@
 				animation-delay:15s;
 			}
 
-			#topic-3 h2 {
+			#activities h2 {
 				font-size: 50px;
 				color: white;
 				text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 			}
 
-			#topic-3 p {
+			#activities p {
 				color: white;
 				text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 			}
 
-			#topic-1 ul {
+			#places ul {
 				list-style: none;
 				margin: 0;
 				padding: 0;
 				display: flex;
 				justify-content: center;
+				align-items: center;
 			}
 
-			#topic-1 > h2 {
+			#places > h2 {
 				margin: 1em;
 				font-size: 3em;
-				text-align: center;
 				color: #eee;
 				text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 			}
@@ -172,7 +177,7 @@
 				width: 400px;
 				margin: 1em;
 				background-color: #eee;
-				box-shadow: 0 0 22px rgba(0, 0, 0, 0.44);
+				box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
 			}
 
 			.card img {
@@ -185,6 +190,52 @@
 
 			.card h3, .card p {
 				margin: 1rem;
+			}
+
+			#contact > form {
+				display: flex;
+			}
+
+			#contact > form > div {
+				display: flex;
+				flex-direction: column;
+			}
+
+			#contact label {
+				display: flex;
+				flex-direction: column;
+			}
+
+			label {
+				margin: 1em 0;
+			}
+
+			label span {
+				margin: 1em 0;
+			}
+
+			input, textarea {
+				border: 1px solid #000;
+				padding: 0.5em;
+				margin: 0 2em 0 0;
+				width: 20em;
+				font-size: 1em;
+			}
+
+			textarea {
+				height: 9em;
+				margin: 0 0 0 0;
+			}
+
+			form button {
+				width: auto;
+				font-size: 1em;
+				margin: 1em 0;
+				align-self: flex-end;
+				padding: 0.5em 1em;
+				background-color:rgb(0, 0, 0);
+				color: #fff;
+				border: none;
 			}
 		</style>
 	</head>
@@ -204,7 +255,7 @@
 				<h2>Mt. St. Helens</h2>
 			</section>
 
-			<section id="topic-1">
+			<section id="places">
 				<h2>Places to Visit</h2>
 				<ul>
 					<li class="card">
@@ -227,8 +278,8 @@
 				</ul>
 			</section>
 
-			<section id="topic-2">
-				<div id = "topic-2-text">
+			<section id="more-info">
+				<div id = "more-info-text">
 					<h2>The possibilites are endless</h2>
 					<p>
 						The eruption of Mt. St. Helens was the most deadly and economically destructive volcanic event<br> in the U.S when it blew back in 
@@ -238,7 +289,7 @@
 				</div>
 			</section>
 
-			<section id="topic-3">
+			<section id="activities">
 				<div>
 					<h2>Activities Galore</h2>
 					<p> 
@@ -258,8 +309,26 @@
 			</section>
 
 			<footer id="contact">
+				<h2>Questions? Contact Us!</h2>
 				<form>
-					...
+					<div>
+						<label>
+							<span>Name</span>
+							<input type="text">
+						</label>
+			
+						<label>
+							<span>Email</span>
+							<input type="email">
+						</label>
+					</div>
+					<div>
+						<label>
+							<span>Message</span>
+							<textarea></textarea>
+						</label>
+						<button type="submit">Send</button>
+					</div>
 				</form>
 			</footer>
 		</main>
